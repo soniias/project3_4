@@ -41,5 +41,26 @@ print(bird.roar())
 print(zebra.walk())
 
 
+import random
+class Cars:
+    def __init__(self, car, color, age, quality):
+        self.car = car
+        self.color = color
+        self.age = age
+        self.quality = quality
 
+    def driving(self):
+        state = random.randint(1, 2)
+        if state == 1:
+            return (f"{self.car} їде")
+        elif state == 2:
+            return (f"{self.car} зупинилась")
 
+    # def breaking(self):
+    #         return (f"{self.color}{self.car} зламався через те, що він {self.age}")
+
+cars = Cars("Маршрутка", "Жовтра", "стара", "не дуже хороша")
+lorry = Cars("Вантажівка", "Красна", "нова", "хороша")
+
+print(cars.driving())
+print(lorry.driving())

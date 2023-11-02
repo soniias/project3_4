@@ -30,7 +30,6 @@ class Animals:
         else:
             return f"{self.name} не вміє ходити"
 
-
 monkey = Animals("Мавпа", swim=True, fly=False, roar=False, walk=True)
 bear = Animals("Ведмідь", swim=True, fly=False, roar=True, walk=True)
 bird = Animals("Пташка", swim=True, fly=True, roar=False, walk=True)
